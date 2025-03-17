@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Debugging Console</title>
+    <link rel="stylesheet" href="console.css">
+</head>
+<body>
+    <h1>Interactive Debugging Console</h1>
+    
+    <div class="container">
+        <!-- Question Box -->
+        <div class="code-box">
+            <h2>Debug This Code:</h2>
+            <pre>
+    public class DebugExample {
+        public static void main(String[] args) {
+            System.out.println("Hello, world!";  // Error in the code
+        }
+    }
+            </pre>
+        </div>
+
+        <!-- Debugging Section -->
+        <div class="debug-container">
+            <h3>Copy the code and Try to fix it.</h3>
+
+            <!-- Left Side: User Input -->
+            <div class="user-input">
+                <h2>Your Code:</h2>
+                <textarea id="javaCode" placeholder="Fix the error and submit..."></textarea>
+                <button onclick="submitCode()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="console.js"></script>
+</body>
+</html>

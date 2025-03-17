@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: auto;
+    background-image: url(2.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+
+.output-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Loading Animation */
+.loading-text {
+    font-size: 20px;
+    color: yellow;
+    animation: fadeInOut 1s infinite alternate;
+}
+
+.processing-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Fade-in/out animation */
+@keyframes fadeInOut {
+    0% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+
+/* Correct Output */
+pre {
+    background-color: #000;
+    color: #0f0;
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+/* Glassmorphism Style for the output box */
+pre {
+    background: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(10px); 
+    border-radius: 15px;
+    color: #a8ff80; 
+    padding-top: 220px;
+    font-size: 20px;
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.2); 
+    margin-top: 40px;
+    width: 80%;
+    height: 80%;
+    max-width: 800px;
+    overflow-x: auto;
+    border: 1px solid rgba(255, 255, 255, 0.9); 
+}
+
+/* Hidden by default */
+.hidden {
+    display: none;
+}
+
+

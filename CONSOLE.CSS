@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    background-image: url(2.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1200px;  /* Increased max-width to allow more space */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    gap: 0px; /* Removed gap between boxes */
+}
+
+/* Common Box Style */
+.code-box, .user-input {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+/* Adjusted the width for the boxes */
+.code-box {
+    width: 50%;
+    margin-top: 53px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px); 
+}
+
+.user-input {
+    width: 90%; /* Increased to 70% */
+    padding-right: 0px; /* Removed extra padding */
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px); 
+}
+
+/* Code Box */
+pre {
+    background: #000;
+    padding: 15px;
+    border-radius: 10px;
+    color: #0f0;
+    font-size: 14px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    flex-grow: 1;
+}
+
+/* Debugging Layout */
+.debug-container {
+    width: 48%; /* Adjusted width to maintain consistency */
+    display: flex;
+    flex-direction: column; /* Align vertically */
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center;
+}
+
+/* Textarea */
+textarea {
+    width: 90%;
+    height: 100%;
+    background: #000;
+    color: #0f0;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #444;
+    resize: none;
+    flex-grow: 1;
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #ff6600, #ff4500);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    align-self: center;
+    width: 100%;
+    max-width: 200px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.7);
+}
+
+
+.debug-container h3 {
+    color: rgb(0, 0, 0);
+    /* margin-bottom: 15px;  */
+    margin-right: 220px;
+    font-size: 18px; 
+    align-items: right;
+    
+}
